@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Order Form</title>
+<meta charset="utf-8">
+<style=background-color:yellow;>
+</head>
+<body>
+<h1>Super Squirrel's Merch</h1><br>
+<h3>&nbsp&nbsp&nbsp Plush Toy $15 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp Dog Costume $25 &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp &nbsp&nbsp Peanuts $12<br></h3>
+
+<form method="get" name="myform">
+
+
+<img src="images/plush.jpeg" onmouseover=
+style height=150px; width=150px >
+
+<img src = "images/SD.jpg" onmouseover=
+style height=150px; width=150px >
+
+<img src = "images/Peanuts.jpg" onmouseover=
+style height=150px; width=150px ><br>
+
+<label for="Toy">Plush Toy Quantity</label>
+<input type="text" name="Toy" list="Toy" style="width:30px; height:12px">
+<datalist id="Toy">
+<option value="0">
+<option value="1">
+<option value="2">
+<option value="3">
+<option value="4">
+<option value="5">
+</datalist>
+
+<label for="Costume">Costume Quantity</label>
+<input type="text" name="Costume" list="Costume" style="width:30px; height:12px">
+<datalist id="Costume">
+<option value="0">
+<option value="1">
+<option value="2">
+<option value="3">
+<option value="4">
+<option value="5">
+</datalist>
+<label for="Peanut">Peanut Quantity</label>
+<input type="text" name="Peanut" list="Peanut" style="width:30px; height:12px">
+<datalist id="Peanut">
+<option value="0">
+<option value="1">
+<option value="2">
+<option value="3">
+<option value="4">
+<option value="5">
+</datalist>
+<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp
+
+New York Resident?<br>
+
+<input type="radio" name="tax" id=taxyes value="Yes"> Yes &nbsp&nbsp&nbsp
+<input type="radio" name="tax" id=taxno value="No"> No<br><br>
+
+
+<button type="button" onclick=
+'myform.Total.value=(eval(myform.Toy.value*15)+eval(myform.Costume.value*25)+eval(myform.Peanut.value*12))'>Calculate Total Amount Due</button>
+
+
+<input type="text" name="Total" id="Total" style="width:50px; height:15px">
+
+
+
+
+<br>
+<br>
+
+</form>
+</body>
+</html>

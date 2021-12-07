@@ -1,0 +1,10 @@
+body { background-image:url('images/Space background.jpg');background-size:100% 100%;"}
+
+
+p {color: white;}
+table,tr,td{
+    border: 2px solid blue;	
+    
+}
+tr, td {padding:50px; }
+
